@@ -1,0 +1,142 @@
+:root {
+    --main : hsl(217, 12%, 63%);
+    --secondary : hsl(215deg 22% 15%);
+    --third : hsl(210deg 19% 18%);
+    --Grey: hsl(216, 12%, 54%);
+    --Orange: hsl(25, 97%, 53%);
+    --background : hsl(216, 12%, 8%);
+}
+*, :active, :focus {
+    outline: none!important;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    /* text-transform: capitalize; */
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--main);
+    margin: 0px;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+}
+.card-front, .card-back {
+    background-color: var(--secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.card-back {
+    align-items: center;
+    visibility: hidden;
+    /* width: 355px;
+    height: 360px; */
+}
+.circle-icon {
+    display: inline-flex;
+    background-color: var(--third);
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.circle-icon {
+    display: inline-flex;
+    background-color: var(--third);
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.submit:hover,
+.degree .circle-icon.active,
+.degree .circle-icon.active:hover,
+.degree .circle-icon:hover {
+    color:#fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.degree .circle-icon.active:hover,
+.degree .circle-icon:hover {
+    background-color: var(--Orange);
+}
+.degree .circle-icon.active {
+    background-color: var(--Grey);
+}
+.submit:hover {
+    color: var(--Orange);
+    background-color: #fff;
+}
+.circle-icon img {
+    height: 15px;
+    width: 15px;
+}
+.title {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+.detail {
+    font-size: 13px;
+}
+.degree {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+    font-weight: bold;
+}
+.submit {
+    width: 100%;
+    background-color: var(--Orange);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+h2 {
+    color: #fff;
+    margin: 10px 0;
+}
+.thanks {
+    text-align: center;
+    font-size: 13px;
+    padding: 0 3px;
+}
+.rated-state {
+    color: var(--Orange);
+    background-color: var(--third);
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+@media (min-width: 0px) and (max-width: 375px){
+    .card-front, .card-back {
+        width: 335px;
+    }
+}

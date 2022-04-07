@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/icon-star.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+  <body>
+    <div class="card">
+            <!-- card start -->
+      <div class="card-front">
+        <!-- Rating state start -->
+        <div class="circle-icon">
+          <img src="images/icon-star.svg" alt="star">
+        </div>
+        <div class="title">
+          How did we do?
+        </div>
+        <div class="detail">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </div>
+        <div class="degree">
+          <div id="1" class="circle-icon">1</div>
+          <div id="2" class="circle-icon">2</div>
+          <div id="3" class="circle-icon">3</div>
+          <div id="4" class="circle-icon">4</div>
+          <div id="5" class="circle-icon">5</div>
+        </div>
+        <div class="submit">Submit</div>
+      </div>
+      <!-- Rating state end -->
+      <div class="card-back">
+        <!-- Thank you state start -->
+        <div class="img">
+          <img src="images/illustration-thank-you.svg" alt="thank-you">
+        </div>
+        <div class="rated-state">
+          You selected <span id="rate-chosie"></span> out of 5
+        </div>
+        <h2>Thank you!</h2>
+        <div class="thanks">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </div>
+        <!-- Thank you state end -->
+      </div>
+      <!-- card end -->
+    </div>
+    <footer>    
+      <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abubakr Hisham</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
